@@ -1,0 +1,6 @@
+--ui bdd
+--reporter spec
+--recursive
+--check-leaks
+test/*.test.js
+test/*/*.test.js

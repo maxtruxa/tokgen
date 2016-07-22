@@ -1,0 +1,53 @@
+{
+  "name": "tokgen",
+  "version": "0.1.0",
+  "description": "Generate cryptographically secure token strings",
+  "author": "Max Truxa <dev@maxtruxa.com> (http://maxtruxa.com/)",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxtruxa/tokgen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxtruxa/tokgen/issues"
+  },
+  "dependencies": {
+    "expand-string": "^1.1.1",
+    "lodash.defaults": "^4.0.1",
+    "mockery": "^1.7.0",
+    "sinon": "^1.17.4"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.9",
+    "eslint": "^2.5.3",
+    "expect.js": "^0.3.1",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5"
+  },
+  "engines": {
+    "node": ">=4.0"
+  },
+  "scripts": {
+    "test": "mocha --opts test/mocha.opts",
+    "test-ci": "istanbul cover _mocha --report lcovonly -- --opts test/mocha.opts",
+    "coverage": "istanbul cover _mocha -- --reporter dot --opts test/mocha.opts",
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    ".eslintrc.yaml",
+    "examples/",
+    "lib/",
+    "test/"
+  ],
+  "keywords": [
+    "string",
+    "generator",
+    "random",
+    "crypto",
+    "token"
+  ]
+}

@@ -1,0 +1,135 @@
+extends: 'eslint:recommended'
+
+env:
+  node: true,
+  es6: true
+
+rules:
+  # Possible Errors
+  # http://eslint.org/docs/rules/#possible-errors
+  comma-dangle: ['error', 'only-multiline']
+  valid-jsdoc: ['error', {
+    'prefer': {
+      'return': 'returns'
+    },
+    'preferType': {
+      'String': 'string',
+      'Object': 'object',
+      'Number': 'number'
+    }
+  }]
+
+  # Best Practices
+  # http://eslint.org/docs/rules/#best-practices
+  array-callback-return: 'error'
+  curly: 'error'
+  dot-location: ['error', 'property']
+  eqeqeq: 'error'
+  no-alert: 'error'
+  no-case-declarations: 'error'
+  no-div-regex: 'error'
+  no-eq-null: 'error'
+  no-eval: 'error'
+  no-extend-native: 'error'
+  no-implied-eval: 'error'
+  no-labels: 'error'
+  no-lone-blocks: 'error'
+  no-loop-func: 'error'
+  no-multi-str: 'error'
+  no-native-reassign: 'error'
+  no-new-func: 'error'
+  no-new-wrappers: 'error'
+  no-octal-escape: 'error'
+  no-proto: 'error'
+  no-return-assign: 'error'
+  no-self-compare: 'error'
+  no-sequences: 'error'
+  no-throw-literal: 'error'
+  no-unmodified-loop-condition: 'error'
+  no-useless-concat: 'error'
+  no-useless-escape: 'error'
+  no-warning-comments: ['error', {
+    'terms': ['todo']
+  }]
+  radix: 'error'
+  #vars-on-top: 'error'
+  wrap-iife: ['error', 'inside']
+  yoda: 'error'
+
+  # Strict Mode
+  # http://eslint.org/docs/rules/#strict-mode
+  strict: ['error', 'global']
+
+  # Variables
+  # http://eslint.org/docs/rules/#variables
+  no-undef: 'error'
+  no-undef-init: 'error'
+  #no-undefined: 'error'
+  no-use-before-define: 'error'
+
+  # Node.js and CommonJS
+  # http://eslint.org/docs/rules/#nodejs-and-commonjs
+  global-require: 'error'
+  no-mixed-requires: 'error'
+  no-new-require: 'error'
+  no-path-concat: 'error'
+  no-process-env: 'error'
+  no-process-exit: 'error'
+
+  # Stylistic Issues
+  # http://eslint.org/docs/rules/#stylistic-issues
+  array-bracket-spacing: ['error', 'never']
+  block-spacing: ['error', 'always']
+  brace-style: ['error', '1tbs', {'allowSingleLine': true}]
+  camelcase: ['error', {'properties': 'never'}]
+  comma-spacing: 'error'
+  comma-style: 'error'
+  computed-property-spacing: 'error'
+  consistent-this: ['error', 'self']
+  eol-last: 'error'
+  indent: ['error', 2, {'SwitchCase': 1}]
+  key-spacing: 'error'
+  keyword-spacing: 'error'
+  linebreak-style: ['error', 'unix']
+  max-len: ['error', 80, 2, {'ignoreUrls': true}]
+  new-cap: 'error'
+  new-parens: 'error'
+  newline-per-chained-call: 'error'
+  no-array-constructor: 'error'
+  no-lonely-if: 'error'
+  no-multiple-empty-lines: ['error', {
+    'max': 2,
+    'maxEOF': 1,
+    'maxBOF': 0
+  }]
+  no-negated-condition: 'error'
+  no-nested-ternary: 'error'
+  no-new-object: 'error'
+  no-spaced-func: 'error'
+  no-trailing-spaces: 'error'
+  no-unneeded-ternary: 'error'
+  no-whitespace-before-property: 'error'
+  object-curly-spacing: ['error', 'never']
+  one-var: ['error', 'never']
+  one-var-declaration-per-line: 'error'
+  operator-assignment: ['error', 'always']
+  operator-linebreak: ['error', 'after']
+  #quote-props:
+  quotes: ['error', 'single', 'avoid-escape']
+  semi: ['error', 'always']
+  semi-spacing: 'error'
+  space-before-blocks: 'error'
+  space-before-function-paren: ['error', 'never']
+  space-in-parens: 'error'
+  space-infix-ops: 'error'
+  space-unary-ops: 'error'
+  #spaced-comment: 'error'
+
+  # ECMAScript 6
+  # http://eslint.org/docs/rules/#ecmascript-6
+  arrow-body-style: ['error', 'always']
+  arrow-parens: ['error', 'always']
+  arrow-spacing: 'error'
+  object-shorthand: 'error'
+  template-curly-spacing: ['error', 'never']
+

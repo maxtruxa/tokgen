@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "4.4"
+  - "5.11"
+  - "6.1"
+  - "node"
+sudo: false
+script: "npm run test-ci"
+after_script: "cat ./coverage/lcov.info | coveralls"
+
