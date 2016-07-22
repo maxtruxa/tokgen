@@ -1,6 +1,6 @@
 {
   "name": "tokgen",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Generate cryptographically secure token strings",
   "author": "Max Truxa <dev@maxtruxa.com> (http://maxtruxa.com/)",
   "main": "index.js",
