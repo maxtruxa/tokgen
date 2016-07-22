@@ -1,6 +1,6 @@
 {
   "name": "tokgen",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Generate cryptographically secure token strings",
   "author": "Max Truxa <dev@maxtruxa.com> (http://maxtruxa.com/)",
   "main": "index.js",
@@ -14,16 +14,15 @@
   },
   "dependencies": {
     "expand-string": "^1.1.1",
-    "lodash.defaults": "^4.0.1",
-    "mockery": "^1.7.0",
-    "sinon": "^1.17.4"
+    "lodash.defaults": "^4.0.1"
   },
   "devDependencies": {
     "coveralls": "^2.11.9",
     "eslint": "^2.5.3",
     "expect.js": "^0.3.1",
     "istanbul": "^0.4.2",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.4"
   },
   "engines": {
     "node": ">=4.0"
